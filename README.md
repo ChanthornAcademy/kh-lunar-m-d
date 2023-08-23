@@ -14,9 +14,9 @@ npm install khmer-lunar-md
 
 ```javascript
 import dayjs from 'dayjs';
-import toKhDate from 'khmer-lunar-md';
+import toKhDateM from 'khmer-lunar-md';
 
-dayjs.extend(toKhDate);
+dayjs.extend(toKhDateM);
 
 const khDate = dayjs().toKhDate(format?);
 ```
