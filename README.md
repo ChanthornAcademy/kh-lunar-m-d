@@ -7,14 +7,14 @@
 ## Installation
 
 ```bash
-npm install kh-lunar-m-d
+npm install khmer-lunar-md
 ```
 
 ## Usage
 
 ```javascript
 import dayjs from 'dayjs';
-import toKhDate from 'kh-lunar-m-d';
+import toKhDate from 'khmer-lunar-md';
 
 dayjs.extend(toKhDate);
 
