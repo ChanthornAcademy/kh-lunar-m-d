@@ -1,7 +1,8 @@
 {
   "name": "khmer-lunar-md",
-  "version": "0.1.0",
-  "type": "module",
+  "version": "0.1.1",
+  "description": "Khmer Lunar date Plugin for Day.js",
+  "main": "./src/main.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
