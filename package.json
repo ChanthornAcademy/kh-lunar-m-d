@@ -1,0 +1,29 @@
+{
+  "name": "khmer-lunar-md",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChanthornAcademy/kh-lunar-m-d.git"
+  },
+  "keywords": [
+    "Khmer date",
+    "Khmer Lunar",
+    "Lunar"
+  ],
+  "author": "chanthorn",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "@thyrith/momentkh": "^2.5.3",
+    "dayjs": "^1.11.9"
+  }
+}

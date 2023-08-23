@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khmer Lunar Date</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1></h1>
+      <h2></h2>
+      <h3></h3>
+      <ul></ul>
+    </div>
+    <script type="module">
+      import dayjs from "dayjs";
+      import toKhDate from "./src/main.ts";
+      dayjs.extend(toKhDate);
+      const date = dayjs().date(1);
+      document.querySelector("h1").innerHTML = date
+        .khNewYear()
+        .format("DD/MM/YYYY HH:mm:ss");
+      const ul = document.querySelector("ul");
+      for (let i = 0; i < date.daysInMonth(); i++) {
+        const li = document.createElement("li");
+        li.innerHTML = `${date
+          .add(i, "day")
+          .toKhDate("ថ្ងៃ W DN ខែ m")} - ${date
+          .add(i, "day")
+          .format("DD/MM/YYYY")}`;
+        ul.appendChild(li);
+      }
+    </script>
+  </body>
+</html>
