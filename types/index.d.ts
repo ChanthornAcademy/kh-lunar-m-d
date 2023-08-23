@@ -5,7 +5,7 @@ declare const plugin: PluginFunc;
 export = plugin;
 declare namespace plugin {
   export interface toKhDate {
-    toKhDate(format?: string): string;
+    toKhDateM(format?: string): string;
     khNewYear(): string;
   }
 }

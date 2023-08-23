@@ -18,7 +18,7 @@ import toKhDateM from 'khmer-lunar-md';
 
 dayjs.extend(toKhDateM);
 
-const khDate = dayjs().toKhDate(format?);
+const khDate = dayjs().toKhDateM(format?);
 ```
 
 ## Format Reference

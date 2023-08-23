@@ -23,7 +23,7 @@ const toNumber = (number: string) => {
 const toKhDateM: PluginFunc<plugin.toKhDate> = (o, c, d) => {
   const proto = c.prototype;
   const date = momentkh(moment);
-  proto.toKhDate = function (format?: string) {
+  proto.toKhDateM = function (format?: string) {
     return date(toNumber(this.format())).toKhDate(format);
   };
   proto.khNewYear = function () {
